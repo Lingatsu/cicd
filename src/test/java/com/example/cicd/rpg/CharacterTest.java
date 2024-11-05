@@ -1,4 +1,4 @@
-package com.example.cicd.tp1;
+package com.example.cicd.rpg;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ public class CharacterTest {
     @Test
     public void testConstructorInitializesLevelToOne() {
         // Création d'un personnage avec le constructeur
-        Character character = new Character("Aragorn", "Guerrier");
+        com.example.cicd.rpg.Character character = new com.example.cicd.rpg.Character("Aragorn", "Guerrier");
 
         // Vérification que le niveau est bien initialisé à 1
         assertEquals(1, character.getLevel(), "Le niveau initial du personnage devrait être 1");
@@ -20,7 +20,7 @@ public class CharacterTest {
     @Test
     public void testLevelUpIncreasesLevelByOne() {
         // Création d'un personnage
-        Character character = new Character("Legolas", "Archer");
+        com.example.cicd.rpg.Character character = new Character("Legolas", "Archer");
 
         // Appel de la méthode levelUp pour augmenter le niveau
         character.levelUp();
